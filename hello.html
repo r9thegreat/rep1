@@ -1,10 +1,63 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>My webpage</title>
+		<title>My Form</title>
+		<link href="style.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
-		Hi, Im Arnav, Im 16 years old, I love football and games
+		<p><h1>Student Form</h1></p>
+		<form>
+		<table>
+			<tr>
+				<td>Name</td>
+				<td><input type="text" name="Name" minlength="3"></td>
+			</tr>
+			<tr>
+				<td>Surname</td>
+				<td><input type="text" name="Surname" minlength="3"></td>
+			</tr>
+			<tr>
+				<td>Grade</td>
+				<td><input type="number" name="Grade" min="1" max="12"></td>
+			</tr>
+			<tr>
+				<td>Division</td>
+				<td>
+					<input type="radio" name="A">A
+					<input type="radio" name="B">B
+					<input type="radio" name="C">C
+					<input type="radio" name="D">D
+				</td>
+
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td>
+					<input type="radio" name="Male">Male
+					<input type="radio" name="Female">Female
+				</td>
+			</tr>
+			<tr>
+				<td>Clubs</td>
+				<td>
+					<input type="checkbox" name="Football" value="F">
+					<label for="Football">Football</label>
+
+					<input type="checkbox" name="Debate" value="D">
+					<label for="Debate">Debate</label>
+
+					<input type="checkbox" name="Art" value="A">
+					<label for="Art">Art</label>
+
+					<input type="checkbox" name="Chess" value="C">
+					<label for="Chess">Chess</label>
+				</td>
+			</tr>
+			<tr>
+				<td><button type="submit" class="button" >Submit</button></td>
+			</tr>	
+		</table>
+		</form>
 
 	</body>
 
